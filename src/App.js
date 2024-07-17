@@ -4,7 +4,58 @@ import 'github-markdown-css/github-markdown.css';
 import './App.css';
 
 function App() {
-  const [markdown, setMarkdown] = useState('# Hello, world!\n\nThis is a preview of your README.md');
+  const [markdown, setMarkdown] = useState(`# Project Name
+
+Short description or tagline for your project.
+    
+## Table of Contents
+    
+- [Introduction](#introduction)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+
+A brief introduction to what your project is and what it does.
+
+## Features
+
+- List of features or functionalities of your project.
+- Bullet points are often used here.
+
+## Installation
+
+Instructions on how to install and set up your project.
+
+\`\`\`bash
+$ npm install
+$ npm start
+\`\`\`
+
+Include any dependencies or prerequisites needed for installation.
+
+## Usage
+
+Instructions and examples on how to use your project.
+
+\`\`\`javascript
+const example = require('your-module');
+
+// Use example here
+\`\`\`
+
+Include screenshots, gifs, or code snippets demonstrating usage.
+
+## Contributing
+
+Guidelines if you want others to contribute to your project.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).`);
 
   const handleInputChange = (e) => {
     setMarkdown(e.target.value);
